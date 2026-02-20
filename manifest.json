@@ -1,0 +1,13 @@
+{
+   "manifest_version": 3,
+   "name": "save2notion",
+   "version": "1.0",
+   "description": "Save any text directly to notion pages",
+   "permissions": [],
+   "content_scripts": [
+      {
+         "matches": ["<all_urls>"],
+         "js": ["content.js"]
+      }
+   ]
+}
