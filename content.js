@@ -1,4 +1,5 @@
 document.addEventListener("mouseup", showToolbarOnHover);
+const selectedTexts = [];
 
 function showToolbarOnHover() {
    const selection = window.getSelection();
@@ -109,6 +110,7 @@ function openSettings() {
 function saveToNotion() {
    const selection = window.getSelection();
    const text = selection.toString().trim();
-   console.log(text);
+   selectedTexts.push({ message: text, messageId: Date.now(), pageId: "adsfasdf" });
+
    removeToolbar();
 }
